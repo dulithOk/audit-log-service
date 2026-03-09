@@ -1,0 +1,42 @@
+# Version control
+.git/
+.gitignore
+
+# Environment — never bake secrets into the image
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test artifacts
+tests/
+coverage.xml
+htmlcov/
+test-results/
+
+# Dev tooling
+.vscode/
+.idea/
+*.swp
+
+# Docs
+*.md
+docs/
+
+# CI
+Jenkinsfile
+.github/
+
+# Docker files themselves (already in build context)
+Dockerfile*
+docker-compose*.yml
+
+# Logs
+*.log
+logs/
